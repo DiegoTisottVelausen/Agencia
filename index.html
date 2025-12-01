@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agência</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body">
+
+    <header class="header">
+        <img class="header__item--img" src="Padrao.png" 
+        srcset="webcreative_logo_small.png 600w,
+                webcreative_logo_medium.png 1200w,
+                webcreative_logo_original.png 1800w"
+        sizes="(max-width: 600px) 100vw,
+                (max-width: 1200px) 50vw,
+                33vw"
+        >
+      
+    </header>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item">Home</li>
+            <li class="nav__item">Sobre nós</li>
+            <li class="nav__item">Serviços</li>
+            <li class="nav__item">Depoimentos</li>
+            <li class="nav__item">Contatos</li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <section class="content__list">
+
+            <article class="content__item">
+                <h2>Home</h2>
+                <h3>Seja bem vindo a Agência Criativa Web</h3>
+                <p>Desde 2025 atuando no desenvolvimento de sistemas e soluçoes criativas.</p>
+            </article>
+            
+            <article class="content__item">
+                <h2>Sobre Nós</h2>
+                <h3>A Agência Criativa Web</h3>
+                <p>Atuamos desde 2025 no mercado nacional, oferecendo soluções de Marketing Direto, com o fornecimento de banco de dados para as mais diversas ações Publicitárias..</p>
+            </article>  
+
+            <article class="content__item">
+                <h2>Serviços</h2>
+                <p>Soluções criativas e personalizadas no desenvolvimento de sites , lojas virtuais e sistema em plataforma web..</p>
+            </article>
+            
+            <article class="content__item">
+                <h2>Depoimentos</h2>
+
+                <p><strong>“A Agência Criativa Web transformou nossa presença digital. O novo site ficou leve, moderno e aumentou muito o número de contatos recebidos pela empresa.”</strong><br>
+                — Mariana Duarte, Gerente Comercial da LumeSolar</p>
+
+                <p><strong>“Profissionais extremamente atenciosos e rápidos. Nossa loja virtual ficou linda e funcional. Hoje vendemos 3x mais do que antes.”</strong><br>
+                — Ricardo Fontes, Proprietário da FitHouse Store</p>
+
+                <p><strong>“A equipe desenvolveu um sistema sob medida para nossa operação. Simples de usar, estável e com suporte excelente.”</strong><br>
+                — Helena Martins, Coordenadora de Projetos da MaxData</p>    
+                            
+            </article>  
+
+            <form class="content__form">
+
+                <h2>Contato</h2>
+                <h3>Vamos conversar?</h3>
+
+                <label class="content__form content__form--label" for="nome">Nome*:</label>
+                <br>
+                <input class="content__form content__form--input" type="text" id="nome" name="nome" required>
+                <br>
+                <label class="content__form content__form--label" for="email">Email*:</label>
+                <br>
+                <input class="content__form content__form--input" type="text" id="email" name="email" required>
+                <br>
+                <label class="content__form content__form--label" for="fone">Telefone*:</label>
+                <br>
+                <input class="content__form content__form--input" type="text" id="fone" name="fone" required>
+                <br>
+                <label class="content__form content__form--label" for="msg">Mensagem: </label>
+                <br>
+                <textarea class="content__form content__form--textarea" name="msg" id="msg" cols="25" rows="5"></textarea>
+                <br>
+                <button class="content__form content__form--btn" type="submit">Enviar</button>
+
+            </form>
+     
+        </section>
+
+    </main>
+   
+    <footer class="footer">
+        <h2>&copy;   2025 Diego - Todos os direitos reservados</h2>
+        <h3>Contatos</h3>
+        <a href="">Instagram</a> |
+        <a href="">LinkedIn</a>
+    </footer>
+
+</body>
+</html>
