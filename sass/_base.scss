@@ -1,0 +1,21 @@
+@use 'variaveis';
+@use 'mixins';
+
+.body{
+    font-family: variaveis.$fonte-global;
+    font-size: 1rem;
+    line-height: 1.5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 0.25fr 2.75fr 0.5fr;
+
+    /*Eixo horizontal*/
+    justify-items: center;
+
+    /*Eixo vertical*/
+    align-items: start;
+    text-align: center;
+    @include mixins.min-alt;
+    
+    background: variaveis.$cor-fundo-site;
+}

@@ -1,0 +1,40 @@
+@use 'variaveis';
+@use 'mixins';
+
+.content{
+    grid-column: 1 / 4;
+    grid-row: 3 / 4; 
+    @include mixins.comp(70%);
+    @include mixins.margem;
+    @include mixins.padding;
+    background-color: variaveis.$cor-fundo-content;
+    @include mixins.borda-arredondada(0.5rem);
+    opacity: 0.85;
+
+    &__form{
+        
+        &--label{
+            font-size: 15px;
+            margin-bottom: 0px;        
+        }
+
+        &--input{
+            @include mixins.comp(80%);
+            @include mixins.max-comp;
+            @include mixins.borda-arredondada;
+            border: solid 1.5px;        
+        }
+
+        &--textarea{
+            @include mixins.comp(80%);
+            @include mixins.max-comp;
+            @include mixins.borda-arredondada(10px);
+            border: solid 1.5px;
+        }
+
+        &--btn{
+            @include mixins.borda-arredondada;
+            border: solid 1.5px;
+        }        
+    }
+}

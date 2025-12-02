@@ -1,0 +1,25 @@
+
+@mixin borda-arredondada($padrao: 5px){
+    border-radius: $padrao;
+}
+
+@mixin comp($padrao: 100%){
+    width: $padrao;
+}
+
+@mixin max-comp($padrao: 600px){
+    max-width: $padrao;
+}
+
+@mixin min-alt($padrao: 100vh){
+    min-height: $padrao;
+}
+
+@mixin margem($padrao: 0.5em){
+    margin: $padrao;
+}
+
+@mixin padding($padrao: 0.5em){
+    padding: $padrao;
+}
+
